@@ -4,8 +4,6 @@ const express = require('express')
 const app = express();
 app.use(express.json());
 
-//chamado de porta: localhost:3333
-
 /**
  * GET - Buscar info
  * POST - Inserir info
@@ -51,4 +49,6 @@ app.patch("/cursos/:id", (request, response)=>{
 app.delete("/cursos/:id", (request, response)=>{
     return response.json(["curso 1 3 5"])
 });
+
+//chamado de porta: localhost:3333
 app.listen(3333)
